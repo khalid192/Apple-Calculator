@@ -29,7 +29,7 @@ function calcu(btn){
     inputValue='';
     output.textContent='0'
  }else if(value==='='){
-    try{inputValue = eval(inputValue.replace('x','*'))
+    try{inputValue = eval(inputValue.replace('x','*').replace(',','.'))
         output.textContent=inputValue
 
     }catch{
