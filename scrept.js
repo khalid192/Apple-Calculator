@@ -24,7 +24,7 @@ let inputValue='';
 
 function calcu(btn){
  const value=btn.textContent;
- 
+ if(value==='='&&output.textContent==='0'){;inputValue='0'}
  if(value==='AC'){
     inputValue='';
     output.textContent='0'
@@ -35,6 +35,7 @@ function calcu(btn){
     }catch{
         output.textContent='Error';
     }
+    
  }else if(value==='%'){inputValue=inputValue/100;output.textContent=inputValue}
  else if(value==='+/-'){inputValue=-parseFloat(inputValue);output.textContent=inputValue}
  else{

@@ -9,8 +9,8 @@
 <body>
     <div id="evry">
         <div id="calculator">
-
-           
+        <div id="anim" style="position: absolute; width: 650px ; left: 0; z-index: -1; bottom: 0;"></div>
+        
                 <output id="out">0</output>
             
             
@@ -38,5 +38,16 @@
         </div>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+<script>
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('anim'), // فين غادي يتحط الأنيميشن
+    renderer: 'svg', // طريقة العرض
+    loop: true, // واش يدور بزاف المرات
+    autoplay: true, // يبدأ بوحدو
+    path: 'STUDENT.json' // مسار ملف Lottie JSON ديالك
+  });
+
+</script>
 <script src="scrept.js"></script>
 </html>
